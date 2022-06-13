@@ -47,6 +47,15 @@ public sealed class GameController : MonoBehaviour
         Questions();
         CheckAnswer();
         Answers();
+        ExitGame();
+    }
+
+    void ExitGame() //leaves the game
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     void Questions() //moves on to the next question
